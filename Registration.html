@@ -1,31 +1,99 @@
+<!DOCTYPE html>
 <html>
+
 <head>
- <title>Registration</title>
+    <title>Registration</title>
+    <style>
+        body {
+            background: #f7f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        form {
+            text-align: left;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #fff;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .gen {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
-<style>
-body{
-background:#f7f2f2;
-}
-.gen{
-display:flex;
-}
-</style>
+
 <body>
-<label>Enter your name</label><br>
-<input type="text"><br>
-<label>Email:</label><br>
-<input type="mail"><br>
-<label>Mobile No:</label><br>
-<input type="number"><br>
-<label>Gender:</label><br>
-<div class="gen">
-<label>Male</label><br>
-<input type="radio"name="gender" value="male"><br>
-<label>Female</label><br>
-<input type="radio"name="gender" value="females"><br>
-<label>Other</label><br>
-<input type="radio"name="gender" value="other"><br>
-</div>
+    <form action="submit.html">
+        <label>Enter your name</label><br>
+        <input type="text"><br>
+        <label>Email:</label><br>
+        <input type="email"><br>
+        <label>Mobile No:</label><br>
+        <input type="number"><br>
+        <label>Gender:</label><br>
+        <div class="gen">
+            <label>Male</label>
+            <input type="radio" name="gender" value="male">
+            <label>Female</label>
+            <input type="radio" name="gender" value="female">
+            <label>Other</label>
+            <input type="radio" name="gender" value="other">
+        </div>
+
+        <label>Address</label><font color="red">*</font><br>
+        <textarea rows="2" cols="20" id='addr'></textarea><br>
+
+        <input type='submit' value='Submit' />
+        <input type='reset' value='Reset' />
+    </form>
 </body>
 
 </html>
