@@ -22,9 +22,9 @@ A simple and elegant online bookstore web application where users can browse, se
 
 ## 📸 Screenshots
 
-[Screenshots](https://github.com/Kishan269565/Online-Book-Store/blob/main/main.png)
+![Screenshots](https://github.com/Kishan269565/Online-Book-Store/blob/main/main.png)
 
-[Screenshots](https://github.com/Kishan269565/Online-Book-Store/blob/main/login.png)
+![Screenshots](https://github.com/Kishan269565/Online-Book-Store/blob/main/login.png)
 
 
 ## 📜 License
